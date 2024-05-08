@@ -106,7 +106,7 @@ main {
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 10px solid #24292e;
 }
 
 .container .profile-data .info h1{
@@ -152,6 +152,30 @@ main {
   display: none;
 }
 
+.events {
+  background-color: #d3d3d3;
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.events h2{
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.events ul li{
+  margin-bottom: 15px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.events ul li p{
+  font-size: 16px;
+  font-weight: 600;
+}
+
 @media (max-width: 1280px) {
   .container {
     flex-direction: column;
@@ -175,6 +199,16 @@ main {
   {
     width: 100%;
   }
+  
+  .container .profile-data .info img{
+    border: 7px solid #24292e;
+  }
+  
+  .events ul li{
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  
 }
 
 @media (max-width: 425px) {
@@ -184,6 +218,7 @@ main {
 
   .container .profile-data .info img{
     margin-bottom: 20px;
+    border: 5px solid #24292e;
   }
 
   .container .profile-data .info img,
